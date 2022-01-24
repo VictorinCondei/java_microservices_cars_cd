@@ -12,6 +12,7 @@ pipeline {
         APP_GIT_URL   = "https://github.com/VictorinCondei/java_microservices_cars_cd.git"
         NEXUS_SERVER  = "http://nexus-common.apps.cluster.domain.example.com/repository/java"
 
+        
         // DO NOT CHANGE THE GLOBAL VARS BELOW THIS LINE
         APP_NAME = "cars"
     }    
@@ -21,7 +22,7 @@ pipeline {
                 echo '### Checking Static Code Style  ###'
                 sh '''
                         export PATH=${MAVEN_PATH}:$PATH
-                        cd /var/lib/jenkins/workspace/${PIPELINE_NAME}
+                        cd /var/lib/jenkins/workspace/StageTwo/${PIPELINE_NAME}
                         echo $PATH
                         mvn clean
                         mvn checkstyle:check
