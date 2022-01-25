@@ -51,7 +51,7 @@ pipeline {
         stage('Promote to Staging Env') {
             steps {
                 timeout(time: 60, unit: 'MINUTES') {
-                    input message: "Promote to Staging?"
+                    input message: "Do you want to Promote to Staging?"
                 }
                 sh '''
                         export PATH=${MAVEN_PATH}:$PATH
