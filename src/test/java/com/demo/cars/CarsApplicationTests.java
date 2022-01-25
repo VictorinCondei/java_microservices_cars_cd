@@ -62,7 +62,7 @@ public class CarsApplicationTests {
 				entity, String.class);
 
 		Assert.assertNotNull(response.getBody());
-		Assert.assertEquals("NotOK", response.getBody());
+		Assert.assertEquals("OK", response.getBody());
 	}
 
 }
