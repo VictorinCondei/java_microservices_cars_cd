@@ -24,7 +24,7 @@ public class CarsController {
         cars.add(new Car(2,"Mini John Cooper Works","BMW"));
         cars.add(new Car(3,"Bmw Z4","BMW"));
         cars.add(new Car(4,"Ferrari Roma","Ferrari"));
-        cars.add(new Car(5,"Mercedes Maybach","Daimler"));
+        cars.add(new Car(5,"Mercedes Maybach","Daimler AG"));
         cars.add(new Car(6,"Rolls Royce","Rolls-Royce Motor Cars"));
 
         return cars;
